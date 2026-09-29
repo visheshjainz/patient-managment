@@ -1,0 +1,329 @@
+/* Patient Wellness System - Patient Dashboard Styles */
+
+.patient-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+    color: white;
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 24px;
+}
+
+.patient-hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.patient-hero p {
+    opacity: 0.9;
+}
+
+.wellness-score {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.wellness-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+}
+
+.wellness-circle .score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.wellness-circle .label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.health-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.metric-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 16px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.metric-icon {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.metric-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.metric-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+}
+
+.metric-status {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.appointment-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+}
+
+.appointment-date {
+    text-align: center;
+    min-width: 60px;
+}
+
+.appointment-date .day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.appointment-date .month {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.appointment-info {
+    flex: 1;
+}
+
+.appointment-info h4 {
+    margin-bottom: 4px;
+}
+
+.appointment-info p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.medicine-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 8px;
+}
+
+.medicine-card .med-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.medicine-card .med-info {
+    flex: 1;
+}
+
+.medicine-card .med-name {
+    font-weight: 600;
+}
+
+.medicine-card .med-dosage {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.medicine-card .med-time {
+    font-size: 0.75rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.quick-action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.quick-action-btn:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.quick-action-btn .icon {
+    font-size: 1.5rem;
+}
+
+.quick-action-btn .label {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.profile-info h3 {
+    margin-bottom: 4px;
+}
+
+.profile-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.detail-item {
+    padding: 12px 16px;
+    background: var(--bg);
+    border-radius: var(--radius);
+}
+
+.detail-item .label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-item .value {
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.record-timeline {
+    position: relative;
+    padding-left: 24px;
+}
+
+.record-timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid var(--surface);
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.timeline-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+}
+
+.timeline-content h4 {
+    margin-bottom: 8px;
+}
+
+.vital-signs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.vital {
+    text-align: center;
+    padding: 8px;
+    background: var(--bg);
+    border-radius: var(--radius);
+}
+
+.vital .vital-value {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.vital .vital-label {
+    font-size: 0.7rem;
+    color: var(--text-light);
+}

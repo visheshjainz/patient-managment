@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & FAQ - Patient Wellness System</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/patient.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title">Help & FAQ</h1>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title mb-3">Frequently Asked Questions</h3>
+
+            <div class="mb-3">
+                <h4>How do I book an appointment?</h4>
+                <p class="text-muted">Go to the Appointments page and click "Book Appointment". Fill in the date, time, and reason for your visit, then submit the request. The hospital will review and approve your appointment.</p>
+            </div>
+
+            <div class="mb-3">
+                <h4>How do I view my health records?</h4>
+                <p class="text-muted">Navigate to the Health Records page from the sidebar or dashboard. You will see a timeline of all your health checkups, including vitals, diagnoses, and treatments.</p>
+            </div>
+
+            <div class="mb-3">
+                <h4>How do medicine reminders work?</h4>
+                <p class="text-muted">When a doctor prescribes medicine, it will appear on your Medicines page with dosage and frequency information. You will also receive notifications about your medications.</p>
+            </div>
+
+            <div class="mb-3">
+                <h4>How do I update my profile?</h4>
+                <p class="text-muted">Go to the Profile page and update your information such as address, emergency contact, blood group, allergies, and medical history. Click "Update Profile" to save changes.</p>
+            </div>
+
+            <div class="mb-3">
+                <h4>What do the notification types mean?</h4>
+                <p class="text-muted">
+                    <strong>Appointment Reminder:</strong> Updates about your scheduled appointments.<br>
+                    <strong>Checkup Reminder:</strong> Reminders for regular health checkups.<br>
+                    <strong>Medicine Reminder:</strong> Alerts about your prescribed medications.<br>
+                    <strong>Report:</strong> Notifications about new health reports.<br>
+                    <strong>Hospital Message:</strong> General announcements from the hospital.
+                </p>
+            </div>
+
+            <div class="mb-3">
+                <h4>How do I cancel an appointment?</h4>
+                <p class="text-muted">Go to the Appointments page, find the pending appointment you want to cancel, and click the "Cancel" button. Note that only pending appointments can be cancelled.</p>
+            </div>
+
+            <div class="mb-3">
+                <h4>What should I do if I forget my password?</h4>
+                <p class="text-muted">Please contact the hospital administration to reset your password. For security reasons, password reset is not available through the portal.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title mb-3">Contact Support</h3>
+            <p>If you need further assistance, please contact the hospital administration:</p>
+            <ul style="margin-left: 20px; margin-top: 12px;">
+                <li>Phone: +91 98765 43210</li>
+                <li>Email: support@wellnesssystem.com</li>
+                <li>Hours: Monday - Saturday, 9:00 AM - 6:00 PM</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/patient.js"></script>
+    <script src="../js/notifications.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initNavbar('help');
+            initSidebar('help');
+        });
+    </script>
+</body>
+</html>
